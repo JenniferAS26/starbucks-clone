@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 16px;
+  width: 100%;
+  height: 83px;
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+header .logo-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+header .logo-container .logo {
+  align-self: center;
+}
+header .logo-container .logo svg {
+  width: 50px;
+  height: 50px;
+}
+header .nav-container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-container .options-list {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav-container .options-list a {
+  color: #212121;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+header .nav-container .actions-list {
+  width: 60%;
+  height: 100%;
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+header .nav-container .actions-list .location-item {
+  width: 50%;
+}
+header .nav-container .actions-list .location-item a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+header .nav-container .actions-list .location-item a svg {
+  padding-right: 15px;
+  color: #000000;
+  width: 42px;
+  height: 42px;
+}
+header .nav-container .actions-list .action-btn {
+  width: 25%;
+}
+header .nav-container .actions-list .action-btn a {
+  border: 1px solid;
+  padding: 7px 16px;
+  border-radius: 18px;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+header .nav-container .actions-list .action-btn .join {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+main .hero-section {
+  width: 100%;
+  height: auto;
+  margin: 32px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #EB81A5;
+}
+main .hero-section .image-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .hero-section .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+main .hero-section .content-container {
+  width: 50%;
+  padding: 32px 54px;
+  text-align: center;
+}
+main .hero-section .content-container h1 {
+  margin-bottom: 24px;
+}
+main .hero-section .content-container h1 span {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #1E3932;
+}
+main .hero-section .content-container p {
+  color: #1E3932;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+main .hero-section .content-container a {
+  padding: 7px 16px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 1px solid #1E3932;
+  border-radius: 120px;
+  color: #1E3932;
+}
+main .rewards-section,
+main .season-section,
+main .eat-section,
+main .bekind-section {
+  margin: 32px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+main .rewards-section .image-container,
+main .season-section .image-container,
+main .eat-section .image-container,
+main .bekind-section .image-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .rewards-section .image-container img,
+main .season-section .image-container img,
+main .eat-section .image-container img,
+main .bekind-section .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+main .rewards-section .content-container,
+main .season-section .content-container,
+main .eat-section .content-container,
+main .bekind-section .content-container {
+  width: 50%;
+  padding: 32px 54px;
+  text-align: center;
+}
+main .rewards-section .content-container h3,
+main .season-section .content-container h3,
+main .eat-section .content-container h3,
+main .bekind-section .content-container h3 {
+  margin-bottom: 24px;
+}
+main .rewards-section .content-container h3 span,
+main .season-section .content-container h3 span,
+main .eat-section .content-container h3 span,
+main .bekind-section .content-container h3 span {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #1E3932;
+}
+main .rewards-section .content-container p,
+main .season-section .content-container p,
+main .eat-section .content-container p,
+main .bekind-section .content-container p {
+  color: #1E3932;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+main .rewards-section .content-container a,
+main .season-section .content-container a,
+main .eat-section .content-container a,
+main .bekind-section .content-container a {
+  padding: 7px 16px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 1px solid #1E3932;
+  border-radius: 120px;
+  color: #1E3932;
+}
+main .season-section,
+main .bekind-section {
+  flex-direction: row-reverse;
+}
+main .rewards-section {
+  background-color: #D3E8E0;
+}
+main .rewards-section .image-container {
+  background-color: #006241;
+}
+main .season-section {
+  background-color: #8F8BF4;
+}
+main .eat-section {
+  background-color: #C8DF79;
+}
+main .bekind-section {
+  background-color: #E1FCCD;
+}
+main .bekind-section .image-container {
+  background-color: #009E75;
+}
+main .bekind-section .content-container h3 span {
+  font-size: 2.4rem;
+}
+main .bekind-section .content-container p {
+  font-size: 2rem;
+}
+main .reward-info {
+  margin: 32px 0;
+  padding: 32px 0;
+  text-align: center;
+}
+main .reward-info p {
+  color: #212121;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+main .reward-info p a {
+  text-decoration: underline;
+  color: #212121;
+}
+main .subscription {
+  margin-top: 32px;
+  padding: 32px 16px;
+}
+main .subscription p {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+
+footer {
+  padding: 24px 16px;
+}
+footer .company-info-container {
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+footer .company-info-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  margin-bottom: 16px;
+}
+footer .company-info-container ul h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+footer .company-info-container ul button {
+  border: none;
+  background-color: transparent;
+}
+footer .bottom-container {
+  width: 100%;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+footer .bottom-container .social-media {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom-container .social-media a {
+  color: #212121;
+}
+footer .bottom-container .terms {
+  margin-top: 26px;
+}
+footer .bottom-container .terms li {
+  height: 37px;
+}
+footer .bottom-container .terms li a {
+  padding: 8px 0;
+  margin-bottom: 4px;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer .laws {
+  color: #6B6B6B;
+}
+
+@media (max-width: 764px) {
+  main .hero-section,
+  main .rewards-section,
+  main .season-section,
+  main .eat-section,
+  main .bekind-section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  main .hero-section .image-container,
+  main .rewards-section .image-container,
+  main .season-section .image-container,
+  main .eat-section .image-container,
+  main .bekind-section .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  main .hero-section .image-container img,
+  main .rewards-section .image-container img,
+  main .season-section .image-container img,
+  main .eat-section .image-container img,
+  main .bekind-section .image-container img {
+    width: 100%;
+  }
+  main .hero-section .content-container,
+  main .rewards-section .content-container,
+  main .season-section .content-container,
+  main .eat-section .content-container,
+  main .bekind-section .content-container {
+    padding: 32px 16px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    height: 99px;
+  }
+  header .logo-container {
+    width: 91px;
+    height: 100%;
+  }
+  header .logo-container svg {
+    width: 51px;
+    height: 51px;
+  }
+}/*# sourceMappingURL=main.css.map */
